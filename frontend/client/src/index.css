@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+#note-text-area::-webkit-scrollbar {
+    display: none;
+}
+
+#note-list-con::-webkit-scrollbar {
+    width: 3px;
+}
+
+#note-list-con::-webkit-scrollbar-track {
+    background: rgb(237, 237, 237);
+    border-radius: 3px;
+}
+
+#note-list-con::-webkit-scrollbar-thumb {
+    background: rgb(223, 223, 223);
+    border-radius: 3px;
+}
