@@ -1,6 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const monoose = require('mongoose')
+const cors = require('cors')
 
 const app = express()
 const PORT = process.env.PORT || 5000
@@ -8,6 +9,10 @@ const PORT = process.env.PORT || 5000
 // settings
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
+app.use(cors({
+    origin: true,
+    credentials: true,
+}))
 
 monoose.connect(process.env.MONGODB_URI)
 .then(()=>{

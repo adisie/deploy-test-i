@@ -1,14 +1,24 @@
 import {useState} from 'react'
+import {useDispatch} from 'react-redux'
+
+// actions from slices
+// notes
+import {
+    addNewNote,
+} from '../notesSlice'
 
 // icons
 // send
 import { GrSend } from "react-icons/gr"
 
 // main
-const NewPost = () => {
+const NewNote = () => {
 
     // local states
     const [text,setText] = useState('')
+
+    // hooks
+    const dispatch = useDispatch()
 
     // adjust text area height
     const adjustTextAreaHeight = e => {
@@ -22,7 +32,7 @@ const NewPost = () => {
     const submitHandler = () => {
         let textarea = document.getElementById('note-text-area')
         if(text.trim()){
-            console.log({text})
+            dispatch(addNewNote({text}))
         }
         setText('')
         textarea.style.height = '18px'
@@ -53,4 +63,4 @@ const NewPost = () => {
   )
 }
 
-export default NewPost
+export default NewNote
