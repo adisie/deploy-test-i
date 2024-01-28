@@ -7,7 +7,7 @@ import './index.css'
 import App from './App'
 
 // defaults
-axios.defaults.baseURL = 'http://localhost:5000'
+axios.defaults.baseURL = 'https://dep-test-698v.onrender.com'
 axios.defaults.withCredentials = true
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
