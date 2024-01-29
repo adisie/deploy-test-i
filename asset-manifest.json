@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/clent/static/css/main.026c3c0e.css",
+    "main.js": "/clent/static/js/main.bf50c393.js",
+    "index.html": "/clent/index.html",
+    "main.026c3c0e.css.map": "/clent/static/css/main.026c3c0e.css.map",
+    "main.bf50c393.js.map": "/clent/static/js/main.bf50c393.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.026c3c0e.css",
+    "static/js/main.bf50c393.js"
+  ]
+}
